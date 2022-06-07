@@ -7,6 +7,10 @@ We used three different kinds of networks to solve problem 1, 2, and 3.
 3. **Conditional GAN (cGAN):** We use GAN to approximate the point of a quadratic equation.  
 
 # Dependencies
+The list of the required packages are given in the requirements.txt. Please install them by using the below command.
+```
+pip install -r requirements.txt
+```
 
 # Problem-1
 ## Solution
