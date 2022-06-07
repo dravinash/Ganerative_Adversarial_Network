@@ -1,6 +1,7 @@
 import torch
 from matplotlib import pyplot
 from torch import nn
+from tqdm import tqdm
 
 device = torch.device("cuda:0,1" if torch.cuda.is_available() else "cpu")
 
@@ -51,7 +52,7 @@ def train(g_model, d_model, gan_model, latent_dim, n_epochs=10000, n_batch=128, 
     optimizer_d = torch.optim.Adam(d_model.parameters(), lr=0.001)
     criterion = nn.BCELoss()
     half_batch = int(n_batch / 2)
-    for i in range(n_epochs):
+    for i in tqdm(range(n_epochs)):
         x, y = generate_real_samples(half_batch)
         loss = criterion(d_model(x), y) 
         d_model.zero_grad()
