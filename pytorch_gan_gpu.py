@@ -2,8 +2,7 @@ import torch
 from matplotlib import pyplot
 from torch import nn
 import os
-import pdb
-import os
+
 os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
 os.environ["CUDA_VISIBLE_DEVICES"] = "0,1"  # specify which GPU(s) to be used
 
