@@ -4,7 +4,6 @@ from tensorflow.keras.models import load_model
 import numpy as np
 import imageio
 
-
 # configurations
 latent_dim = 128
 num_classes = 10
