@@ -8,7 +8,7 @@ from tensorflow.keras import layers
 from tensorflow.keras.optimizers import Adam
 from tensorflow.keras.datasets.mnist import load_data
  
-# generate randoms sample from x^2
+# Load MNIST dataset
 def load_real_samples():
 	# load mnist dataset
 	(trainX, _), (_, _) = load_data()
