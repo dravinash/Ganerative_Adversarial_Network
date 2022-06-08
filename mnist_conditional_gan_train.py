@@ -181,5 +181,6 @@ generated_image *= 255.0
 converted_images = generated_image.astype(np.uint8)
 converted_images = tf.image.resize(converted_images, (96, 96)).numpy().astype(np.uint8)
 converted_images = converted_images.reshape(96, 96)
-print('Image Shape:',converted_images.shape)
+
 imageio.imwrite('plots/'+str(alpha)+'.png', converted_images)
+print('Image saved successfully!')
