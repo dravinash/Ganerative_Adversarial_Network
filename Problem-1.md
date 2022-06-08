@@ -27,7 +27,6 @@ The initial results are not that great but as program completed 6000 iterations,
 <img src="plots/gan_2000.png" width="400" height="300"> <img src="plots/gan_4000.png" width="400" height="300"> <img src="plots/gan_6000.png" width="400" height="300"> <img src="plots/gan_8000.png" width="400" height="300"> <img src="plots/gan_10000.png" width="400" height="300">
 
 
-# References
 
 
 
