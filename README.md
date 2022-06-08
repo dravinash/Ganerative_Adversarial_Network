@@ -13,6 +13,13 @@ pip install -r requirements.txt
 ```
 
 # References
+1. Goodfellow, I., Bengio, Y., & Courville, A. (2016). Deep learning (Chapter-20). MIT press.
+2. Goodfellow, I., Pouget-Abadie, J., Mirza, M., Xu, B., Warde-Farley, D., Ozair, S., ... & Bengio, Y. (2014. Generative adversarial nets. Advances in neural information processing systems, 27.
+3. https://developers.google.com/machine-learning/gan
+4. Mirza, M., & Osindero, S. (2014). Conditional generative adversarial nets. arXiv preprint arXiv:1411.1784.
+
+
+
 
 
 
