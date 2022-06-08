@@ -29,7 +29,7 @@ def save_plot(examples, n):
 # load model
 model = load_model('models/generator_model_500.h5')
 # generate images
-latent_points = generate_latent_points(100, 1)
+latent_points = generate_latent_points(100, 1) # 1 for single image
 print("Latent points:",latent_points.shape)
 # generate images
 X = model.predict(latent_points)
