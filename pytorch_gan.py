@@ -1,9 +1,7 @@
 import torch
-from matplotlib import pyplot
 from torch import nn
+from matplotlib import pyplot
 from tqdm import tqdm
-
-device = torch.device("cuda:0,1" if torch.cuda.is_available() else "cpu")
 
 class GAN(nn.Module):
     def __init__(self, generator, discriminator):
@@ -81,5 +79,6 @@ if __name__ == '__main__':
     h_dim = 128 # two variation 128, 256
     discriminator = nn.Sequential(nn.Linear(n_inputs, h_dim), nn.LeakyReLU(0.1), nn.Linear(h_dim, 1), nn.Sigmoid())
     generator = nn.Sequential(nn.Linear(latent_dim, h_dim), nn.LeakyReLU(0.1), nn.Linear(h_dim, n_inputs), nn.Tanh())
+    # generator = nn.Sequential(nn.Linear(latent_dim, h_dim), nn.LeakyReLU(0.1), nn.Linear(h_dim, n_inputs))
     gan_model = GAN(generator, discriminator)
     train(generator, discriminator, gan_model, latent_dim)
